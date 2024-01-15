@@ -9,9 +9,7 @@ function get_device_info($serial){
     return $json
 }
 
-
-
-$serial = Read-Host "Enter serial: "
+$serial = Read-Host "Enter serial (Without the -, example R90XY8BX): "
 
 $device_info = get_device_info ($serial)
 
